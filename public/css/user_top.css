@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("user_top.css");
+
+.user_main {
+	margin: 40px;
+}
+
+.user_main__head {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user_main__icon {
+	margin: auto 0;
+}
+
+.user_main__icon_left {
+	width: 100px;
+	height: 100px;
+}
+
+.user_main__icon_right {
+	width: 100px;
+	height: 100px;
+}
+
+.user_main__head_text {
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.user_main__menu_bar {
+	overflow: auto;
+	display: flex;
+	white-space: nowrap;
+
+}
+
+.user_main__menu_bar_item {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.user_main__menu_bar_list {
+	min-width: 30%;
+	text-align: center;
+	margin-top: 30px;
+	padding: 15px;
+	border: 1px solid;
+}
+
+.user_main__menu_bar_item {
+	color: blue;
+	font-size: 30px;
+}
+
+.user_main__menu_list_title {
+	margin-top: 60px;
+}
+
+.user_main__menu_list_text {
+	text-align: center;
+	font-size: 35px;
+	color: blue;
+}
