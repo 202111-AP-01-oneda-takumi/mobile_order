@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\InfoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,10 +20,12 @@ Route::get('/', function () {
     return view('user.top');
 })->name('user.top');
 
+Route::get('cart', [CartController::class, 'index'])->name('user.cart');
+Route::get('info', [InfoController::class, 'index'])->name('user.info');
+
 Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
 Route::post('confirm', [ContactController::class, 'confirm'])->name('contact.confirm');
 Route::post('complete', [ContactController::class, 'create'])->name('contact.complete');
-Route::post('contact', [ContactController::class, 'index'])->name('contact.index.back');
 Route::get('edit/{id}', [ContactController::class, 'edit'])->name('contact.edit');
 Route::delete('destroy/{id}/complete', [ContactController::class, 'destroy'])->name('contact.destroy');
 Route::post('edit/{id}/complete', [ContactController::class, 'update'])->name('contact.update');

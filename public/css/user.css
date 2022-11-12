@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("user.css");
+
+.user_main {
+	margin: 40px;
+}
+
+.user_main__head {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user_main__icon {
+	margin: auto 0;
+}
+
+.user_main__icon_left {
+	width: 100px;
+	height: 100px;
+}
+
+.user_main__icon_right {
+	width: 100px;
+	height: 100px;
+}
+
+.user_main__menu_bar {
+	overflow: auto;
+	display: flex;
+	white-space: nowrap;
+
+}
+
+.user_main__menu_bar_item {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.user_main__menu_bar_list {
+	min-width: 30%;
+	text-align: center;
+	margin-top: 30px;
+	padding: 15px;
+	border: 1px solid;
+}
+
+.user_main__menu_bar_item {
+	color: blue;
+	font-size: 30px;
+}
+
+.user_main__menu_list_title {
+	margin-top: 60px;
+}
+
+.user_main__menu_list_text {
+	text-align: center;
+}
+
+.user_main__menu_list {
+	display: grid;
+	grid-template-columns: repeat(2, 40%);
+	justify-content: space-around;
+}
+
+.user_main__menu_item {
+	margin: 15px 0;
+	box-shadow: 5px 5px 15px grey;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.user_main__menu_image {
+	width: 100%;
+	height: 250px;
+}
+
+.user_main__menu_text {
+	margin: 15px 5px;
+	font-size: 30px;
+	text-align: center;
+}
+
+/* ユーザー情報確認画面 */
+
+.infomationConfirmation {
+	margin: 100px;
+}
+
+.infomationConfirmation__title {
+	text-align: center;
+}
+
+.infomationConfirmation__dl {
+	padding-top: 30px;
+}
+
+.infomationConfirmation__item {
+	padding: 40px 0;
+	background-image : linear-gradient(to right, blue, blue 20px, transparent 20px);  /* 幅2の線を作る */
+  background-size: 30px 4px;          /* グラデーションの幅・高さを指定 */
+  background-position: left top;  /* 背景の開始位置を指定 */
+  background-repeat: repeat-x;       /* 横向きにのみ繰り返す */
+}
+
+.infomationConfirmation__dt {
+	font-size: 35px;
+}
+
+.infomationConfirmation__dd {
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.infomationConfirmation__buttons {
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* カート内確認画面 */
+
+.cart {
+	margin: 100px;
+}
+
+.cart__title {
+	text-align: center;
+}
+
+.cart__attention {
+	text-align: center;
+	font-size: 40px;
+}
+
+.cart__list {
+
+}
+
+.cart__item {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+	background-image : linear-gradient(to right, blue, blue 20px, transparent 20px);  /* 幅2の線を作る */
+  background-size: 30px 4px;          /* グラデーションの幅・高さを指定 */
+  background-position: left top;  /* 背景の開始位置を指定 */
+  background-repeat: repeat-x;       /* 横向きにのみ繰り返す */
+}
+
+.cart__quantity {
+	font-size: 25px;
+	align-items: center;
+	display: flex;
+}
+
+.selectbox {
+	text-align: center;
+	border: 1px solid;
+	font-size: 30px;
+	width: 100px;
+	height: 50px;
+	margin-left: 20px;
+}
+
+
+
