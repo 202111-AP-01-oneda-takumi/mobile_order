@@ -1,23 +1,37 @@
 @extends('layouts.index')
 
 @section('css')
-<link rel="stylesheet" href="/css/user.css">
+<link rel="stylesheet" href="/css/style.css">
 @endsection
 
 <div class="user_main">
   <div class="user_main__head">
-
-
-
-
-
-
-    <a href="{{ route('user.info') }}" class="user_main__icon">
-      <img class="user_main__icon_left" src="img/icon_hamburgerMenu.svg"  alt="画像">
-    </a>
-
-
-
+    <div id="hamburgerOpen" class="user_main__icon">
+      <div class="hamburger" id="js-hamburger">
+        <span class="hamburger__line --1"></span>
+        <span class="hamburger__line --2"></span>
+        <span class="hamburger__line --3"></span>
+      </div>
+      <nav class="hamburger__menu">
+        <ul class="hamburger__menuList">
+          <li class="hamburger__menuItem"><a href="{{ route('user.info') }}">ユーザー情報を見る</a></li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+          <li class="hamburger__menuItem">メニュー1</li>
+        </ul>
+        <div class="hamburger__logOut">
+          <button class="button --bulue"><a href="{{ route('user.logout')}}">ログアウト</a></button>
+        </div>
+      </nav>
+      <div class="black-bg" id="js-black-bg"></div>
+    </div>
 
     <div class="user_main__head_center">
       <h1 class="user_main__head_text">メニュー 一覧</h1>
@@ -57,7 +71,7 @@
         <li class="user_main__menu_item">
           <a href="">
             <img class="user_main__menu_image" src="img/img_sake.JPG" alt="">
-            <p class="user_main__menu_text">秋刀魚の塩焼き</p>
+            <p class="user_main__menu_text">鮭のホイル焼き</p>
           </a>
         </li>
         <li class="user_main__menu_item">
@@ -69,7 +83,7 @@
         <li class="user_main__menu_item">
           <a href="">
             <img class="user_main__menu_image" src="img/img_sake.JPG" alt="">
-            <p class="user_main__menu_text">秋刀魚の塩焼き</p>
+            <p class="user_main__menu_text">鮭のホイル焼き</p>
           </a>
         </li>
         <li class="user_main__menu_item">
@@ -81,7 +95,7 @@
         <li class="user_main__menu_item">
           <a href="">
             <img class="user_main__menu_image" src="img/img_sake.JPG" alt="">
-            <p class="user_main__menu_text">秋刀魚の塩焼き</p>
+            <p class="user_main__menu_text">鮭のホイル焼き</p>
           </a>
         </li>
         <li class="user_main__menu_item">
@@ -93,4 +107,7 @@
       </ul>
     </div>
   </section>
+@section('js')
+  <script src="{{ asset('/js/humburger.js') }}"></script>
+@endsection
 </div>

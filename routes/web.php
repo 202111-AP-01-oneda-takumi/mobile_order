@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\CartController;
-use App\Http\Controllers\InfoController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,9 +22,17 @@ Route::get('/', function () {
 })->name('user.top');
 
 Route::get('cart', [CartController::class, 'index'])->name('user.cart');
-Route::get('info', [InfoController::class, 'index'])->name('user.info');
+Route::get('info', [UserController::class, 'info'])->name('user.info');
+Route::post('login', [UserController::class, 'login'])->name('user.login');
+Route::get('loginForm', [UserController::class, 'loginForm'])->name('user.loginForm');
+Route::post('register', [UserController::class, 'register'])->name('user.register');
+Route::get('registerForm', [UserController::class, 'registerForm'])->name('user.registerForm');
+Route::get('logout', [UserController::class, 'logout'])->name('user.logout');
+Route::get('top', [AdminController::class, 'index'])->name('admin.top');
+Route::get('userList', [AdminController::class, 'userList'])->name('admin.userList');
+Route::get('menuList', [AdminController::class, 'menuList'])->name('admin.menuList');
 
-Route::get('contact', [ContactController::class, 'index'])->name('contact.index');
+
 Route::post('confirm', [ContactController::class, 'confirm'])->name('contact.confirm');
 Route::post('complete', [ContactController::class, 'create'])->name('contact.complete');
 Route::get('edit/{id}', [ContactController::class, 'edit'])->name('contact.edit');

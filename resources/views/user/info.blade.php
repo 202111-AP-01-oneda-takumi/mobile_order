@@ -1,10 +1,11 @@
 @extends('layouts.index')
 
 @section('css')
-<link rel="stylesheet" href="/css/user.css">
+<link rel="stylesheet" href="/css/style.css">
 @endsection
 
-<body>
+@section('content')
+<main>
   <div class="infomationConfirmation">
     <h1 class="infomationConfirmation__title">ユーザー情報確認</h1>
     <dl class="infomationConfirmation__dl">
@@ -34,23 +35,5 @@
       </button>
     </div>
   </div>
-</body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 注文確定モーダル -->
+</main>
+@endsection

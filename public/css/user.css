@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* 文字コードの指定 */
-@import url("user.css");
 
 .user_main {
 	margin: 40px;
@@ -98,10 +97,14 @@
 
 .infomationConfirmation__item {
 	padding: 40px 0;
-	background-image : linear-gradient(to right, blue, blue 20px, transparent 20px);  /* 幅2の線を作る */
-  background-size: 30px 4px;          /* グラデーションの幅・高さを指定 */
-  background-position: left top;  /* 背景の開始位置を指定 */
-  background-repeat: repeat-x;       /* 横向きにのみ繰り返す */
+	background-image: linear-gradient(to right, blue, blue 20px, transparent 20px);
+	/* 幅2の線を作る */
+	background-size: 30px 4px;
+	/* グラデーションの幅・高さを指定 */
+	background-position: left top;
+	/* 背景の開始位置を指定 */
+	background-repeat: repeat-x;
+	/* 横向きにのみ繰り返す */
 }
 
 .infomationConfirmation__dt {
@@ -134,18 +137,20 @@
 	font-size: 40px;
 }
 
-.cart__list {
-
-}
+.cart__list {}
 
 .cart__item {
 	display: flex;
 	justify-content: space-between;
 	padding: 40px 0;
-	background-image : linear-gradient(to right, blue, blue 20px, transparent 20px);  /* 幅2の線を作る */
-  background-size: 30px 4px;          /* グラデーションの幅・高さを指定 */
-  background-position: left top;  /* 背景の開始位置を指定 */
-  background-repeat: repeat-x;       /* 横向きにのみ繰り返す */
+	background-image: linear-gradient(to right, blue, blue 20px, transparent 20px);
+	/* 幅2の線を作る */
+	background-size: 30px 4px;
+	/* グラデーションの幅・高さを指定 */
+	background-position: left top;
+	/* 背景の開始位置を指定 */
+	background-repeat: repeat-x;
+	/* 横向きにのみ繰り返す */
 }
 
 .cart__quantity {
@@ -165,3 +170,63 @@
 
 
 
+/* ログイン画面 */
+
+.login {
+	margin: 40px 80px;
+}
+
+.login__title {
+	text-align: center;
+}
+
+.login__items {}
+
+.login__item {
+	padding-top: 50px;
+}
+
+.login__itemText {
+	font-size: 35px;
+}
+
+.login__input {
+	padding-left: 10px;
+	font-size: 40px;
+	border-radius: 15px;
+	width: 100%;
+	height: 100px;
+	margin-top: 30px;
+}
+
+input[type="text"]{
+	font-size: 150%;
+}
+
+.login__button {
+	padding-top: 50px;
+	position: relative;
+}
+
+.login .button {
+	position: absolute;
+	right: 0;
+}
+
+.login__register {
+	margin-top: 200px;
+	position: relative;
+}
+
+.login__registerItem {
+	font-size: 35px;
+	position: absolute;
+	left: 470px;
+	bottom: 0;
+}
+
+.login__registerItem:last-child {
+	bottom: -60px;
+}
+
+/* 新規登録画面 */

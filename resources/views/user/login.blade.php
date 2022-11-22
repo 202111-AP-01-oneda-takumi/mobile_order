@@ -2,7 +2,7 @@
 @section('title', 'cafe-cafe')
 
 @section('css')
-<link rel="stylesheet" href="/css/contact.css">
+<link rel="stylesheet" href="/css/style.css">
 @endsection
 
 @php

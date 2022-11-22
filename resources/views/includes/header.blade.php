@@ -5,7 +5,6 @@
     <ul id="nav_content">
         <li><a href="#intro">はじめに</a></li>
         <li><a href="#try">体験</a></li>
-        <li><a href="{{ route('contact.index') }}">お問い合わせ</a></li>
     </ul>
     <div id="sign_in">
         <a class="modal" href="#modal">サインイン</a>

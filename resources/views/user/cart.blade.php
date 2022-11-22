@@ -1,8 +1,5 @@
 @extends('layouts.index')
 
-@section('css')
-<link rel="stylesheet" href="/css/user.css">
-@endsection
 
 <!-- カート内確認 -->
 
@@ -77,6 +74,8 @@
           </div>
         </div>
       </div>
-      <script src="{{ asset('/js/main.js') }}"></script>
+      @section('js')
+  <script src="{{ asset('/js/modal.js') }}"></script>
+@endsection
     </div>
 </body>

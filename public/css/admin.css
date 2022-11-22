@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+
+/* トップ */
+
+.adminTop {
+  margin: 40px;
+}
+
+.adminTop__title {
+  text-align: center;
+}
+
+.adminTop__list {
+  margin: 0 100px;
+}
+
+.adminTop__item {
+  margin-top: 50px;
+  border: solid 5px blue;
+  border-radius: 20px;
+}
+
+.adminTop__informationList {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adminTop__informationItem.--right {
+  font-size: 20px;
+}
+
+.adminTop__menu {
+
+}
+
+.adminTop__menuList {
+  padding: 30px 0;
+}
+
+.adminTop__order {
+  position: relative;
+  margin-left: 100px;
+  padding-top: 10px;
+}
+
+.adminTop__order .count {
+  position: absolute;
+  top: 12px;
+  right: 100px;
+}
+
+/* ユーザー情報 */
+
+.userList {
+  margin: 40px;
+  position: relative;
+}
+
+.userList .button {
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  width: 150px;
+  height: 70px;
+}
+
+.userList__title {
+  text-align: center;
+}
+
+.userList__wrap {
+  overflow: scroll;
+  width: 100%;
+}
+
+.userList__list {
+  white-space: nowrap;
+  overflow: auto;
+  display: flex;
+  text-align: center;
+}
+
+.userList__item {
+  border: 1px solid blue;
+  font-size: 40px;
+}
+
+.userList__item.--id {
+  width: 100px;
+}
+
+.userList__item.--name {
+  width: 200px;
+}
+
+.userList__item.--mail {
+  width: 500px;
+}
+
+.userList__item.--are {
+  width: 400px;
+}
+
+.userList__item.-- {
+  width: 200px;
+}
+
+.userList__item.--edit {
+  width: 200px;
+}
+
+.userList__item.--delete {
+  width: 200px;
+}
+
+/* メニューリスト */
+
+.menuList {
+  margin: 40px;
+  position: relative;
+}
+
+.menuList .button {
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  width: 150px;
+  height: 70px;
+}
+
+.menuList__title {
+  text-align: center;
+}
+
+.menuList__wrap {
+  overflow: scroll;
+  width: 100%;
+}
+
+.menuList__body {
+
+}
+
+.menuList__list {
+  white-space: nowrap;
+  overflow: auto;
+  display: flex;
+  text-align: center;
+}
+
+.menuList__item {
+  border: 1px solid blue;
+  font-size: 40px;
+}
+
+.menuList__item.--url {
+  width: 400px;
+}
+
+.menuList__item.--name {
+  width: 400px;
+}
+
+.menuList__item.--area {
+  width: 300px;
+}
+
+.menuList__item.--are {
+  width: 400px;
+}
+
+.menuList__item.--edit {
+  width: 200px;
+}
+
+.menuList__item.--delete {
+  width: 200px;
+}

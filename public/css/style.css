@@ -3,17 +3,25 @@
 
 body {
   margin: 0;
+  font-size: 100%;
 }
 
 ul,
 ol {
+  font-size: 35px;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
+li {
+  font-size: 35px;
+}
+
 a {
   text-decoration: none;
+  color: blue;
+  font-size: 30px;
 }
 
 h1 {
@@ -127,4 +135,117 @@ p {
 
 
 /* ハンバーガーメニュー */
+
+/* 
+hamburger(ハンバーガーアイコン)
+=================================== */
+.hamburger {
+  position: absolute;
+  left: 40px;
+  top: 80px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  z-index: 300;
+}
+
+.hamburger__line {
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  right: 0;
+  background-color: #000;
+  transition: all 0.5s;
+}
+
+.hamburger__line.--1 {
+  top: 0;
+}
+
+.hamburger__line.--2 {
+  top: 35px;
+}
+
+.hamburger__line.--3 {
+  top: 70px;
+}
+
+/*ハンバーガーがクリックされたら*/
+.open .hamburger__line.--1 {
+  transform: rotate(-45deg);
+  top: 11px;
+}
+
+.open .hamburger__line.--2 {
+  opacity: 0;
+}
+
+.open .hamburger__line.--3 {
+  transform: rotate(45deg);
+  top: 11px;
+}
+
+.hamburger__menu {
+  position: fixed;
+  left: -100%; /*ハンバーガーがクリックされる前はWindowを左側に隠す*/
+  top: 0;
+  width: 70%; /* 出てくるスライドメニューの幅 */
+  height: 100vh;
+  background-color: #fff;
+  transition: all 0.5s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+}
+
+/*ハンバーガーがクリックされたら左からスライド*/
+.open .hamburger__menu {
+  background-color: rgb( 30, 180, 255);
+  left: 0;
+}
+
+.hamburger__menuList {
+  padding: 150px 0 0 160px;
+}
+
+.hamburger__menuItem {
+  padding: 50px 0;
+  font-size: 30px;
+  color: blue;
+}
+
+/* 
+black-bg(ハンバーガーメニュー解除用bg)
+=================================== */
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/*ハンバーガーメニューが開いたら表示*/
+.open .black-bg {
+  opacity: 0.3;
+  visibility: visible;
+}
+
+.hamburger__logOut {
+  width: 65%;
+  position: fixed;
+  bottom: 0;
+  text-align: right;
+  padding: 30px 50px 30px 0;
+  background-color: white;
+}
+
+.hamburger__logOut .button {
+}
 
