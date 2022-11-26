@@ -9,6 +9,9 @@ class CartController extends Controller
     //
     public function index(Request $request)
     {
+        $params = [
+            'test' => 'あああ'
+        ];
         return view('user.cart');
     }
 

@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="/css/style.css">
 @endsection
 
-
+@section('content')
 <div class="login">
   <h1 class="login__title">ログイン</h1>
   <button class="button --white"><a href="{{ route('admin.top')}}">管理者ログイン</a></button>
@@ -15,11 +15,11 @@
     <div class="login__items">
       <div class="login__item">
         <p class="login__itemText">メールアドレス</p>
-        <input type="text" class="login__input" name="email" required />
+        <input type="text" class="login__input" name="email" required/>
       </div>
       <div class="login__item">
         <p class="login__itemtext">パスワード</p>
-        <input type="password" class="login__input" name="password" required />
+        <input type="password" class="login__input" name="password" required/>
       </div>
     </div>
     <div class="login__button">
@@ -31,3 +31,4 @@
   <a href="" class="login__registerItem">パスワードを忘れた方</a>
   </div>
 </div>
+@endsection

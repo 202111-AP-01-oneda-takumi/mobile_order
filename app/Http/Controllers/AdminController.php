@@ -21,4 +21,14 @@ class AdminController extends Controller
         return view('admin.menuList');
     }
 
+    public function userEdit()
+    {
+        return view('admin.userEdit');
+    }
+
+    public function menuEdit()
+    {
+        return view('admin.menuEdit');
+    }
+
 }

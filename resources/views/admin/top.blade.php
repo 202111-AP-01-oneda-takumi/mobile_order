@@ -1,4 +1,5 @@
 @extends('layouts.index')
+
 <div class="adminTop">
   <h1 class="adminTop__title">オーダー管理</h1>
 
@@ -80,3 +81,4 @@
 @section('js')
   <script src="{{ asset('/js/humburger.js') }}"></script>
 @endsection
+

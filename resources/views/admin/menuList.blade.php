@@ -20,7 +20,7 @@
         <td class="menuList__item --name">鮭のホイル焼き</td>
         <td class="menuList__item --area">1</td>
         <td class="menuList__item --are">アレルギー情報</td>
-        <td class="userList__item --edit"><a href="">編集</a></td>
+        <td class="userList__item --edit"><a href="{{ route('admin.userEdit') }}">編集</a></td>
         <td class="userList__item --delete"><a href="">削除</a></td>
 
       </tr>

@@ -31,6 +31,8 @@ Route::get('logout', [UserController::class, 'logout'])->name('user.logout');
 Route::get('top', [AdminController::class, 'index'])->name('admin.top');
 Route::get('userList', [AdminController::class, 'userList'])->name('admin.userList');
 Route::get('menuList', [AdminController::class, 'menuList'])->name('admin.menuList');
+Route::get('userEdit', [AdminController::class, 'userEdit'])->name('admin.userEdit');
+Route::get('menuEdit', [AdminController::class, 'menuEdit'])->name('admin.menuEdit');
 
 
 Route::post('confirm', [ContactController::class, 'confirm'])->name('contact.confirm');

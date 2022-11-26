@@ -1,0 +1,37 @@
+@charset "UTF-8"; /* 文字コードの指定 */
+
+.allergy {
+  /* margin: 40px; */
+}
+
+.allergy__list {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  text-align: center;
+}
+
+.allergy__item {
+  padding-left: 15px;
+  text-align: left;
+  position: relative;
+  height: 70px;
+  border: 1px solid;
+}
+
+.checkbox {
+  position: absolute;
+  top: 17px;
+  right: 10px;
+}
+
+.allergy__text {
+  font-size: 25px;
+}
+
+
+
+.checkbox {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+}

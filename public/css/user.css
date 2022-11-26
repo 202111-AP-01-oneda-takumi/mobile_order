@@ -230,3 +230,39 @@ input[type="text"]{
 }
 
 /* 新規登録画面 */
+
+.register {
+	margin: 40px 80px;
+}
+
+.register__title {
+	text-align: center;
+}
+.register__items {}
+
+.register__item {
+	padding-top: 50px;
+}
+
+.register__itemText {
+	font-size: 35px;
+}
+
+.register__input {
+	padding-left: 10px;
+	font-size: 40px;
+	border-radius: 15px;
+	width: 100%;
+	height: 100px;
+	margin-top: 30px;
+}
+
+.register .allergy{
+	margin-top: 40px;
+}
+
+.register__buttons {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+}

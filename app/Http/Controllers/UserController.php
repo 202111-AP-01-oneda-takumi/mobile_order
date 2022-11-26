@@ -79,7 +79,6 @@ class UserController extends Controller
     }
 
 
-
     /**
      * ログアウト
      * 
