@@ -2,6 +2,7 @@
 
 @section('css')
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/allergy.css">
 @endsection
 
 @section('content')
@@ -11,19 +12,20 @@
     <dl class="infomationConfirmation__dl">
       <div class="infomationConfirmation__item">
         <dt class="infomationConfirmation__dt">おなまえ</dt>
-        <dd class="infomationConfirmation__dd">おねだ　たくみ</dd>
+        <dd class="infomationConfirmation__dd">{{ $user['name'] }}</dd>
       </div>
       <div class="infomationConfirmation__item">
         <dt class="infomationConfirmation__dt">メールアドレス</dt>
-        <dd class="infomationConfirmation__dd">t.oneda.carecon@gmail.com</dd>
+        <dd class="infomationConfirmation__dd">{{ $user['email'] }}</dd>
       </div>
-      <div class="infomationConfirmation__item">
+      <!-- <div class="infomationConfirmation__item">
         <dt class="infomationConfirmation__dt">パスワード</dt>
         <dd class="infomationConfirmation__dd">・・・・・・・・・・</dd>
-      </div>
+      </div> -->
       <div class="infomationConfirmation__item">
         <dt class="infomationConfirmation__dt">アレルギー情報</dt>
-        <dd class="infomationConfirmation__dd">アレルギーリスト</dd>
+        <dd class="infomationConfirmation__dd">{{ $user['alergy'] }}</dd>
+        @include('includes.allergy')
       </div>
     </dl>
     <div class="infomationConfirmation__buttons">
@@ -31,7 +33,7 @@
         戻る
       </button>
       <button class="button --bulue">
-        変更する
+        <a href="{{ route('admin.userEdit')}}">変更する</a>
       </button>
     </div>
   </div>

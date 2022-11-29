@@ -35,7 +35,7 @@ Route::get('userEdit', [AdminController::class, 'userEdit'])->name('admin.userEd
 Route::get('menuEdit', [AdminController::class, 'menuEdit'])->name('admin.menuEdit');
 
 
-Route::post('confirm', [ContactController::class, 'confirm'])->name('contact.confirm');
+Route::get('confirm', [ContactController::class, 'confirm'])->name('contact.confirm');
 Route::post('complete', [ContactController::class, 'create'])->name('contact.complete');
 Route::get('edit/{id}', [ContactController::class, 'edit'])->name('contact.edit');
 Route::delete('destroy/{id}/complete', [ContactController::class, 'destroy'])->name('contact.destroy');

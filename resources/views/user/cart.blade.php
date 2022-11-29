@@ -74,9 +74,9 @@
       </div>
     </div>
   </div>
-
-  @section('js')
-  <script src="{{ asset('/js/modal.js') }}"></script>
-  @endsection
 </div>
+@endsection
+
+@section('js')
+<script src="{{ asset('/js/modal.js') }}"></script>
 @endsection

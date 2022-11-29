@@ -12,9 +12,14 @@ class UserController extends Controller
 {
 
     // ユーザー情報
-    public function  info(Request $request)
+    public function info(Request $request)
     {
-        return view('user.info');
+        $user = Auth::user();
+        // $user = User::where('id', Auth::user()->id)->get();
+
+        return view('user.info', [
+          'user' => $user
+        ]);
     }
 
 
@@ -94,4 +99,20 @@ class UserController extends Controller
 
         return redirect(route('user.loginForm'));
     }
+
+
 }
+
+
+
+// public function confirm(Request $request)
+// {
+//   $request->session()->put('request', $request->all());
+
+//   // $this->valid($request);
+
+//   $inputs = $request->all();
+
+//   return view('contact.confirm', [
+//     'inputs' => $inputs
+//   ]);

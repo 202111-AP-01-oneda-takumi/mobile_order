@@ -25,6 +25,10 @@
           <input type="email" name="email" id="email" class="register__input" tabindex="4">
         </li>
         <li class="register__item">
+          <p class="register__itemText">パスワード</p>
+          <a class="register__input" href="">パスワードの変更はこちら</a>
+        </li>
+        <li class="register__item">
           <p class="register__itemText">アレルギーがあれば選択してください。</p>
           @include('includes.allergy')
         </li>

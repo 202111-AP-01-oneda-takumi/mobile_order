@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="/css/style.css">
 @endsection
 
+@section('content')
 <div class="user_main">
   <div class="user_main__head">
     <div id="hamburgerOpen" class="user_main__icon">
@@ -69,13 +70,13 @@
     <div class="user_main__menu">
       <ul class="user_main__menu_list">
         <li class="user_main__menu_item">
-          <a href="">
+          <a onclick="addCart()" href="">
             <img class="user_main__menu_image" src="img/img_sake.JPG" alt="">
             <p class="user_main__menu_text">鮭のホイル焼き</p>
           </a>
         </li>
         <li class="user_main__menu_item">
-          <a href="">
+          <a id="menu2" href="">
             <img class="user_main__menu_image" src="img/img_kinoko.JPG" alt="">
             <p class="user_main__menu_text">きのことベーコンの<br>トマトパスタ</p>
           </a>
@@ -107,7 +108,8 @@
       </ul>
     </div>
   </section>
-@section('js')
-  <script src="{{ asset('/js/humburger.js') }}"></script>
-@endsection
 </div>
+@endsection
+@section('js')
+<script src="{{ asset('/js/humburger.js') }}"></script>
+@endsection

@@ -22,7 +22,7 @@ class ContactController extends Controller
   {
     $request->session()->put('request', $request->all());
 
-    $this->valid($request);
+    // $this->valid($request);
 
     $inputs = $request->all();
 
